@@ -1,0 +1,82 @@
+[
+  {
+    "case_id": "independent-001",
+    "receipt_text": "The Cozy Cafe\n123 Main St\n\nDate: 2026-09-15\n\nEspresso x2\nCroissant\n\nSubtotal: 12.50\nTax: 1.00\nTOTAL: SGD 13.50\n\nThank you!",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-002",
+    "receipt_text": "Burger Barn\n45 Elm Ave\n\nReceipt Date: 2026-08-20\n\nCheeseburger Combo\nFries\n\nAmount Due: 15.75\nCurrency: SGD\n\nTotal: 15.75",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-003",
+    "receipt_text": "Noodle House\n789 Oak Ln\n\nDate: 2026-08-10\n\nPad Thai\nSpring Rolls\n\nTotal: 22.00 SGD\n\nPayment: Cash",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-004",
+    "receipt_text": "The Daily Grind\nCoffee Shop\n\nDate: 2026-09-20\n\nLatte\nSandwich\n\nAmount: 10.50\nCurrency: SGD\n\n*Special Offer*\n\nTotal: 10.50",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-005",
+    "receipt_text": "Pizza Palace\n10 Pine St\n\nReceipt Date: 2026-09-01\n\nPepperoni Pizza\n\nTotal Amount: 35.00\n\n*Discount Applied*\n\nFinal Total: 35.00 SGD",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-006",
+    "receipt_text": "Sushi Spot\n20 Maple Ave\n\nDate: 2026-07-15\n\nCalifornia Roll\nMiso Soup\n\nTotal: 25.00\n\n*Loyalty Points Earned*\n\nSGD 25.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-007",
+    "receipt_text": "Cafe Delight\n30 Birch Rd\n\nDate: 2026-09-22\n\nCappuccino\nPastry\n\nSubtotal: 8.75\nTax: 0.65\nTOTAL: S$ 9.40",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-008",
+    "receipt_text": "The Grill House\n40 Cedar St\n\nReceipt Date: 2026-09-10\n\nSteak Frites\n\nAmount Due: 55.00\n\n*Special Offer*\n\nTotal: 55.00 SGD",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-009",
+    "receipt_text": "Pasta Place\n50 Maple Ave\n\nDate: 2026-08-01\n\nSpaghetti Carbonara\n\nTotal: 28.50\n\n*Customer Feedback*\n\nSGD 28.50",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "independent-010",
+    "receipt_text": "Food Court Stall\n\nDate: 2026-09-23\n\nItem: Chicken Rice\n\nPrice: 5.00\n\nThank you!",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "dataset_role": "DEVELOPMENT_ONLY",
+  "interrupted": false,
+  "hashes": {
+    "data/dev.json": "2693b48df0728db2d531fb134338ca7d94d67e8a0fa02955bb0348e3fca79526",
+    "prompts/extract_v2.txt": "995b48656d79ccf42619f7be866d94a1adf311a2e4e525536c8a00d0997ef0d4",
+    "receiptguard.py": "7d6a7feafbe8e12d49738dafcca52030801158345bba8d8741a258d3516e0a37",
+    "ai_client.py": "e8b3d293c2f6997330306bef45a9875338b8ca4340f4ee76cd87cf267f0ce689",
+    "common_validation.py": "0a86c085a69c3e019b3003b17a8f67b95f22e6de132c448b5e28c386b714ba66",
+    "run_development.py": "84f45624ff83ab54de0588431091c8b0d610eaec81ca40c5e38e69226de6e726"
+  },
+  "summary": {
+    "completed": 14,
+    "planned": 14,
+    "complete": true,
+    "regex": {
+      "n": 14,
+      "correct_automated_count": 8,
+      "end_to_end_correct_rate": 0.5714285714285714,
+      "coverage": 0.5714285714285714,
+      "abstention_rate": 0.42857142857142855,
+      "answered_accuracy": 1.0,
+      "routing_accuracy": 0.9285714285714286,
+      "violation_recall": 1.0,
+      "false_release_count": 0,
+      "required_abstention_recall": 1.0,
+      "over_abstention_count": 1,
+      "field_accuracy_including_nulls": {
+        "receipt_date": 1.0,
+        "currency": 1.0,
+        "total": 0.9285714285714286
+      },
+      "human_review_rate": 0.6428571428571429
+    },
+    "ai": {
+      "n": 14,
+      "correct_automated_count": 9,
+      "end_to_end_correct_rate": 0.6428571428571429,
+      "coverage": 0.6428571428571429,
+      "abstention_rate": 0.35714285714285715,
+      "answered_accuracy": 1.0,
+      "routing_accuracy": 1.0,
+      "violation_recall": 1.0,
+      "false_release_count": 0,
+      "required_abstention_recall": 1.0,
+      "over_abstention_count": 0,
+      "field_accuracy_including_nulls": {
+        "receipt_date": 1.0,
+        "currency": 0.9285714285714286,
+        "total": 0.9285714285714286
+      },
+      "human_review_rate": 0.5714285714285714
+    },
+    "service_failure_count": 0,
+    "reported_cost_sum_usd": 0.0013469999999999999,
+    "cost_records_available": 14,
+    "mean_reported_cost_usd": 9.621428571428571e-05,
+    "daily_model_cost_at_80_receipts_usd": 0.007697142857142856,
+    "mean_ai_attempt_seconds": 1.8992857142857142,
+    "development_majority_label": "PASS",
+    "majority_routing_accuracy": 0.42857142857142855,
+    "all_abstain": {
+      "n": 14,
+      "correct_automated_count": 0,
+      "end_to_end_correct_rate": 0.0,
+      "coverage": 0.0,
+      "abstention_rate": 1.0,
+      "answered_accuracy": null,
+      "routing_accuracy": 0.35714285714285715,
+      "violation_recall": 0.0,
+      "false_release_count": 0,
+      "required_abstention_recall": 1.0,
+      "over_abstention_count": 9
+    }
+  }
+}

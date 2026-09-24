@@ -1,0 +1,18 @@
+{
+  "status": "CANDIDATE_NOT_FROZEN",
+  "seed": 62012026,
+  "count": 50,
+  "origin": "Deterministic Python generator authored by the implementation assistant; not independent holdout authorship.",
+  "generator_sha256": "cc66f36df79a42c63aa3557f2a4eed3637e04e62704eae631a4e62f099665f18",
+  "file_sha256": {
+    "test_candidate_inputs.json": "c8559dba364bbcd01d6273bc1d14e063962bf0a4381b50b2d8d2550584f8b2a1",
+    "test_candidate_labels.json": "e634834ce2557ff30b07bc73fadde182b1ef22cefcab162f289714f6eff1d492"
+  },
+  "real_receipts": 0,
+  "evaluation_run": false,
+  "limitations": [
+    "Simulated text noise only; no real OCR pipeline validated.",
+    "Independent case authorship and human label review remain outstanding.",
+    "Do not tune the parser or prompt using these candidates and then claim them as unseen data."
+  ]
+}

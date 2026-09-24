@@ -1,0 +1,226 @@
+[
+  {
+    "case_id": "dev01",
+    "source_type": "synthetic_development",
+    "receipt_text": "Merchant: Demo Cafe\nDate: 2026-09-20\nCurrency: SGD\nTotal: 12.50",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "普通合规开发例"
+  },
+  {
+    "case_id": "dev02",
+    "source_type": "synthetic_development",
+    "receipt_text": "Merchant: Demo Cafe\nDate: 2026-09-20\nCurrency: SGD\nTotal: 50.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "50.00"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "金额上限包含等于"
+  },
+  {
+    "case_id": "dev03",
+    "source_type": "synthetic_development",
+    "receipt_text": "Merchant: Demo Cafe\nDate: 2026-09-20\nCurrency: SGD\nTotal: 50.01",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "50.01"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "超限一分"
+  },
+  {
+    "case_id": "dev04",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-08-25\nSGD\nTotal: 10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-25",
+      "currency": "SGD",
+      "total": "10.00"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "恰好30天"
+  },
+  {
+    "case_id": "dev05",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-08-24\nSGD\nTotal: 10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-24",
+      "currency": "SGD",
+      "total": "10.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "31天"
+  },
+  {
+    "case_id": "dev06",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-25\nSGD\nTotal: 10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-25",
+      "currency": "SGD",
+      "total": "10.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "未来日期"
+  },
+  {
+    "case_id": "dev07",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nTotal: $10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": null,
+      "total": "10.00"
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "美元符号不足以判断币种"
+  },
+  {
+    "case_id": "dev08",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nSGD\nTotal: 10.00\nTotal: 18.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": null
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "总额冲突"
+  },
+  {
+    "case_id": "dev09",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nUSD\nTotal: 10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "USD",
+      "total": "10.00"
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "范围不支持USD，不是违规"
+  },
+  {
+    "case_id": "dev10",
+    "source_type": "synthetic_development",
+    "receipt_text": "SGD\nTotal: 10.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": null,
+      "currency": "SGD",
+      "total": "10.00"
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "缺日期"
+  },
+  {
+    "case_id": "dev11",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nSGD\nSubtotal: 10.00\nTax: 0.90\nTotal: 10.90\nCash: 20.00\nChange: 9.10",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "10.90"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "多个金额，勿把现金当总额"
+  },
+  {
+    "case_id": "dev12",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nSGD\nT0TAL: 12.50",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "关键词字符噪声，金额仍可人工判断"
+  },
+  {
+    "case_id": "dev13",
+    "source_type": "synthetic_development",
+    "receipt_text": "Date: 2026-09-20\nSGD\nGrand total\n12.50",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "跨行总额，检验空白处理"
+  },
+  {
+    "case_id": "dev14",
+    "source_type": "synthetic_development",
+    "receipt_text": "Merchant: Demo Cafe\nDate: 2026-09-20\nCurrency: SGD\nTotal: 12.50",
+    "claim_metadata": {
+      "claim_category": "hotel",
+      "submission_date": "2026-09-24"
+    },
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "不支持的费用类别"
+  }
+]

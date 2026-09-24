@@ -1,0 +1,952 @@
+[
+  {
+    "case_id": "candidate-001",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-001",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-03",
+      "currency": "SGD",
+      "total": "20.70"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-002",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-002",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-14",
+      "currency": "SGD",
+      "total": "53.03"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-003",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-003",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-10",
+      "currency": "SGD",
+      "total": "35.98"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-004",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-004",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-27",
+      "currency": "SGD",
+      "total": "35.96"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-005",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-005",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-10",
+      "currency": "SGD",
+      "total": "55.54"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-006",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-006",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-23",
+      "currency": "SGD",
+      "total": "37.15"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-007",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-007",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-11",
+      "currency": "SGD",
+      "total": "39.64"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-008",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-008",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "61.91"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-009",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-009",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-12",
+      "currency": "SGD",
+      "total": "25.20"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-010",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-010",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-28",
+      "currency": "SGD",
+      "total": "47.95"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-011",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-011",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-27",
+      "currency": "SGD",
+      "total": "75.34"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-012",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-012",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-10",
+      "currency": "SGD",
+      "total": "31.46"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-013",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-013",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-14",
+      "currency": "SGD",
+      "total": "35.65"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-014",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-014",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-01",
+      "currency": "SGD",
+      "total": "80.21"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-015",
+    "source_type": "synthetic",
+    "group": "clean_varied",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-015",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-24",
+      "currency": "SGD",
+      "total": "10.87"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-016",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-016",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-13",
+      "currency": "SGD",
+      "total": "23.99"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-017",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-017",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-12",
+      "currency": "SGD",
+      "total": "73.75"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-018",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-018",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-17",
+      "currency": "SGD",
+      "total": "31.46"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-019",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-019",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-03",
+      "currency": "SGD",
+      "total": "24.19"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-020",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-020",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-26",
+      "currency": "SGD",
+      "total": "78.74"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-021",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-021",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-18",
+      "currency": "SGD",
+      "total": "12.70"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-022",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-022",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-08",
+      "currency": "SGD",
+      "total": "14.95"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-023",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-023",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-02",
+      "currency": "SGD",
+      "total": "69.68"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-024",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-024",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-13",
+      "currency": "SGD",
+      "total": "36.54"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-025",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-025",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-18",
+      "currency": "SGD",
+      "total": "9.85"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-026",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-026",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-05",
+      "currency": "SGD",
+      "total": "81.78"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-027",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-027",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-14",
+      "currency": "SGD",
+      "total": "44.35"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-028",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-028",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-13",
+      "currency": "SGD",
+      "total": "9.66"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-029",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-029",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-26",
+      "currency": "SGD",
+      "total": "62.83"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-030",
+    "source_type": "synthetic",
+    "group": "distractors",
+    "noise_type": "none",
+    "base_receipt_id": "candidate-030",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-20",
+      "currency": "SGD",
+      "total": "22.15"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-031",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "total_label_O_to_zero",
+    "base_receipt_id": "candidate-031",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-21",
+      "currency": "SGD",
+      "total": "33.12"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-032",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "extra_spacing",
+    "base_receipt_id": "candidate-032",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-10",
+      "currency": "SGD",
+      "total": "66.25"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-033",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "line_break_before_total",
+    "base_receipt_id": "candidate-033",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-19",
+      "currency": "SGD",
+      "total": "38.82"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-034",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "case_and_label_variation",
+    "base_receipt_id": "candidate-034",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-14",
+      "currency": "SGD",
+      "total": "36.96"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-035",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "flattened_reading_order",
+    "base_receipt_id": "candidate-035",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-29",
+      "currency": "SGD",
+      "total": "83.53"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-036",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "total_label_O_to_zero",
+    "base_receipt_id": "candidate-036",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-10",
+      "currency": "SGD",
+      "total": "30.97"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-037",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "extra_spacing",
+    "base_receipt_id": "candidate-037",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-17",
+      "currency": "SGD",
+      "total": "46.00"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-038",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "line_break_before_total",
+    "base_receipt_id": "candidate-038",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-09",
+      "currency": "SGD",
+      "total": "53.74"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-039",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "case_and_label_variation",
+    "base_receipt_id": "candidate-039",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-10",
+      "currency": "SGD",
+      "total": "15.18"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-040",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "flattened_reading_order",
+    "base_receipt_id": "candidate-040",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-09",
+      "currency": "SGD",
+      "total": "22.54"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-041",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "total_label_O_to_zero",
+    "base_receipt_id": "candidate-041",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-29",
+      "currency": "SGD",
+      "total": "58.68"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-042",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "extra_spacing",
+    "base_receipt_id": "candidate-042",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-18",
+      "currency": "SGD",
+      "total": "18.20"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-043",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "line_break_before_total",
+    "base_receipt_id": "candidate-043",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-08",
+      "currency": "SGD",
+      "total": "47.07"
+    },
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    },
+    "annotation_note": "Within the amount limit and submission window.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-044",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "case_and_label_variation",
+    "base_receipt_id": "candidate-044",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-23",
+      "currency": "SGD",
+      "total": "63.69"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Amount exceeds SGD 50.00.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-045",
+    "source_type": "synthetic",
+    "group": "simulated_ocr",
+    "noise_type": "flattened_reading_order",
+    "base_receipt_id": "candidate-045",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-11",
+      "currency": "SGD",
+      "total": "27.30"
+    },
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    },
+    "annotation_note": "Submitted more than 30 days after the receipt date.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-046",
+    "source_type": "synthetic",
+    "group": "insufficient_information",
+    "noise_type": "total_erased",
+    "base_receipt_id": "candidate-046",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-17",
+      "currency": "SGD",
+      "total": null
+    },
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": null,
+      "submission_window": true
+    },
+    "annotation_note": "The provided text does not reveal the total.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-047",
+    "source_type": "synthetic",
+    "group": "insufficient_information",
+    "noise_type": "currency_code_erased",
+    "base_receipt_id": "candidate-047",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-23",
+      "currency": null,
+      "total": "81.21"
+    },
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "A bare dollar symbol does not establish SGD.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-048",
+    "source_type": "synthetic",
+    "group": "insufficient_information",
+    "noise_type": "date_erased",
+    "base_receipt_id": "candidate-048",
+    "ground_truth_fields": {
+      "receipt_date": null,
+      "currency": "SGD",
+      "total": "8.43"
+    },
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": null
+    },
+    "annotation_note": "The receipt date is absent.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-049",
+    "source_type": "synthetic",
+    "group": "insufficient_information",
+    "noise_type": "conflicting_totals",
+    "base_receipt_id": "candidate-049",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-29",
+      "currency": "SGD",
+      "total": null
+    },
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": null,
+      "submission_window": true
+    },
+    "annotation_note": "Two conflicting totals have no identifying context.",
+    "review_status": "pending_independent_review"
+  },
+  {
+    "case_id": "candidate-050",
+    "source_type": "synthetic",
+    "group": "insufficient_information",
+    "noise_type": "conflicting_currency",
+    "base_receipt_id": "candidate-050",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-26",
+      "currency": null,
+      "total": "82.09"
+    },
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    },
+    "annotation_note": "Two conflicting currency codes have no identifying context.",
+    "review_status": "pending_independent_review"
+  }
+]

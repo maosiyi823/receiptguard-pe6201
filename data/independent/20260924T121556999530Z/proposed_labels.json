@@ -1,0 +1,142 @@
+[
+  {
+    "case_id": "independent-001",
+    "group": "clean_varied",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-15",
+      "currency": "SGD",
+      "total": "13.50"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "All required fields are present and valid. Submission is within 30 days.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-002",
+    "group": "clean_varied",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-20",
+      "currency": "SGD",
+      "total": "15.75"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Total amount 15.75 exceeds the maximum allowed 50.00.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-003",
+    "group": "clean_varied",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-10",
+      "currency": "SGD",
+      "total": "22.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-10.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-004",
+    "group": "distractors",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "10.50"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "All required fields are present and valid. Submission is within 30 days. 'Special Offer' is a distractor.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-005",
+    "group": "distractors",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-01",
+      "currency": "SGD",
+      "total": "35.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Total amount 35.00 exceeds the maximum allowed 50.00.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-006",
+    "group": "distractors",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-07-15",
+      "currency": "SGD",
+      "total": "25.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Submission date 2026-09-24 is more than 30 days after the receipt date 2026-07-15.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-007",
+    "group": "simulated_ocr",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-22",
+      "currency": "SGD",
+      "total": "9.40"
+    },
+    "expected_status": "PASS",
+    "annotation_note": "All required fields are present and valid. Submission is within 30 days. OCR noise 'S$' is interpreted as SGD.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-008",
+    "group": "simulated_ocr",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-10",
+      "currency": "SGD",
+      "total": "55.00"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Total amount 55.00 exceeds the maximum allowed 50.00.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-009",
+    "group": "simulated_ocr",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-08-01",
+      "currency": "SGD",
+      "total": "28.50"
+    },
+    "expected_status": "FLAG",
+    "annotation_note": "Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-01.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  },
+  {
+    "case_id": "independent-010",
+    "group": "insufficient_information",
+    "source_type": "synthetic_other_model",
+    "ground_truth_fields": {
+      "receipt_date": "2026-09-23",
+      "currency": null,
+      "total": null
+    },
+    "expected_status": "ABSTAIN",
+    "annotation_note": "Currency is missing or ambiguous. Total is missing.",
+    "review_status": "pending",
+    "generator_model": "google/gemini-2.5-flash-lite"
+  }
+]

@@ -1,0 +1,1231 @@
+{
+  "experiment_type": "OFFLINE_REPLAY_OF_V1_OUTPUTS_NOT_A_NEW_MODEL_RUN",
+  "source_file": "results/development_20260924T120434935194Z/cases.jsonl",
+  "source_sha256": "6b556498d14a188ed377cd470e4c0943ee831648d72feb9ec62f5118afb097d1",
+  "validator_sha256": "0a86c085a69c3e019b3003b17a8f67b95f22e6de132c448b5e28c386b714ba66",
+  "prompt_v2_tested": false,
+  "new_api_calls": 0,
+  "metrics": {
+    "regex": {
+      "n": 14,
+      "correct_automated_count": 8,
+      "end_to_end_correct_rate": 0.5714285714285714,
+      "coverage": 0.5714285714285714,
+      "abstention_rate": 0.42857142857142855,
+      "answered_accuracy": 1.0,
+      "routing_accuracy": 0.9285714285714286,
+      "violation_recall": 1.0,
+      "false_release_count": 0,
+      "required_abstention_recall": 1.0,
+      "over_abstention_count": 1,
+      "field_accuracy_including_nulls": {
+        "receipt_date": 1.0,
+        "currency": 1.0,
+        "total": 0.9285714285714286
+      },
+      "human_review_rate": 0.6428571428571429
+    },
+    "ai": {
+      "n": 14,
+      "correct_automated_count": 9,
+      "end_to_end_correct_rate": 0.6428571428571429,
+      "coverage": 0.6428571428571429,
+      "abstention_rate": 0.35714285714285715,
+      "answered_accuracy": 1.0,
+      "routing_accuracy": 1.0,
+      "violation_recall": 1.0,
+      "false_release_count": 0,
+      "required_abstention_recall": 1.0,
+      "over_abstention_count": 0,
+      "field_accuracy_including_nulls": {
+        "receipt_date": 1.0,
+        "currency": 1.0,
+        "total": 1.0
+      },
+      "human_review_rate": 0.5714285714285714
+    }
+  },
+  "cases": [
+    {
+      "case_id": "dev01",
+      "regex": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": [
+            "Merchant: Demo Cafe"
+          ],
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 12.50"
+          ],
+          "currency": [
+            "Currency: SGD"
+          ]
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev02",
+      "regex": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.00"
+        },
+        "evidence": {
+          "merchant": [
+            "Merchant: Demo Cafe"
+          ],
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 50.00"
+          ],
+          "currency": [
+            "Currency: SGD"
+          ]
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.00"
+        },
+        "evidence": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.00"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev03",
+      "regex": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.01"
+        },
+        "evidence": {
+          "merchant": [
+            "Merchant: Demo Cafe"
+          ],
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 50.01"
+          ],
+          "currency": [
+            "Currency: SGD"
+          ]
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.01"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": false
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.01"
+        },
+        "evidence": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.01"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "50.01"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": false
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev04",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-08-25"
+          ],
+          "total": [
+            "Total: 10.00"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 30
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-08-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 30
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev05",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-24",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-08-24"
+          ],
+          "total": [
+            "Total: 10.00"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-24",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": false,
+            "age_days": 31
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-24",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-08-24",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-08-24",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": false,
+            "age_days": 31
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev06",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-25"
+          ],
+          "total": [
+            "Total: 10.00"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": false,
+            "age_days": -1
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-25",
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": false,
+            "age_days": -1
+          }
+        ],
+        "status": "FLAG",
+        "review_required": true,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev07",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": null,
+          "total": "10.00"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: $10.00"
+          ],
+          "merchant": null,
+          "currency": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": null,
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "missing_currency"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": null,
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": null,
+          "total": "$10.00"
+        },
+        "issues": [
+          "currency ambiguity",
+          "unresolved_currency"
+        ],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "currency ambiguity",
+          "missing_currency",
+          "unresolved_currency"
+        ],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev08",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null,
+          "total": null
+        },
+        "issues": [
+          "ambiguous_total",
+          "conflicting_explicit_totals"
+        ],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "ambiguous_total",
+          "conflicting_explicit_totals",
+          "missing_total"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "issues": [
+          "ambiguous_total",
+          "conflicting_explicit_totals"
+        ],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "18.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "ambiguous_total",
+          "conflicting_explicit_totals",
+          "missing_total"
+        ],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev09",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 10.00"
+          ],
+          "currency": [
+            "USD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "unsupported_currency"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "USD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "unsupported_currency"
+        ],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev10",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": null,
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "total": [
+            "Total: 10.00"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null,
+          "receipt_date": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": null,
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "missing_receipt_date"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": null,
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": null,
+          "currency": "SGD",
+          "total": "Total: 10.00"
+        },
+        "issues": [
+          "missing_merchant",
+          "missing_receipt_date"
+        ],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": null,
+          "currency": "SGD",
+          "total": "10.00"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "missing_merchant",
+          "missing_receipt_date"
+        ],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev11",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "10.90"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 10.90"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "10.90"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "10.90"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "10.90"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "10.90"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev12",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null,
+          "total": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": null
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "missing_total"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev13",
+      "regex": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Grand total\n12.50"
+          ],
+          "currency": [
+            "SGD"
+          ],
+          "merchant": null
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": null,
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "PASS",
+        "review_required": false,
+        "review_reasons": [],
+        "policy_version": "demo-v0.1"
+      }
+    },
+    {
+      "case_id": "dev14",
+      "regex": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": [
+            "Merchant: Demo Cafe"
+          ],
+          "receipt_date": [
+            "Date: 2026-09-20"
+          ],
+          "total": [
+            "Total: 12.50"
+          ],
+          "currency": [
+            "Currency: SGD"
+          ]
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "unsupported_or_missing_category"
+        ],
+        "policy_version": "demo-v0.1"
+      },
+      "ai": {
+        "fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "evidence": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "issues": [],
+        "raw_fields": {
+          "merchant": "Demo Cafe",
+          "receipt_date": "2026-09-20",
+          "currency": "SGD",
+          "total": "12.50"
+        },
+        "validation_version": "shared-v0.2",
+        "checks": [
+          {
+            "rule": "meal_limit",
+            "pass": true
+          },
+          {
+            "rule": "submission_window",
+            "pass": true,
+            "age_days": 4
+          }
+        ],
+        "status": "ABSTAIN",
+        "review_required": true,
+        "review_reasons": [
+          "unsupported_or_missing_category"
+        ],
+        "policy_version": "demo-v0.1"
+      }
+    }
+  ]
+}

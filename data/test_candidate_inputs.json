@@ -1,0 +1,402 @@
+[
+  {
+    "case_id": "candidate-001",
+    "receipt_text": "Merchant: Practice Kitchen 01\nDate: 2026-09-03\nCurrency: SGD\nTotal: 20.70",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-002",
+    "receipt_text": "Store: Practice Kitchen 02\nReceipt date: 2026-09-14\nGrand Total: SGD 53.03",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-003",
+    "receipt_text": "Merchant: Practice Kitchen 03\nDate: 2026-08-10\nSGD\nAmount Due\n35.98",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-004",
+    "receipt_text": "Merchant: Practice Kitchen 04\nDate: 2026-08-27\nCurrency: SGD\nTotal: 35.96",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-005",
+    "receipt_text": "Store: Practice Kitchen 05\nReceipt date: 2026-09-10\nGrand Total: SGD 55.54",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-006",
+    "receipt_text": "Merchant: Practice Kitchen 06\nDate: 2026-08-23\nSGD\nAmount Due\n37.15",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-007",
+    "receipt_text": "Merchant: Practice Kitchen 07\nDate: 2026-09-11\nCurrency: SGD\nTotal: 39.64",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-008",
+    "receipt_text": "Store: Practice Kitchen 08\nReceipt date: 2026-09-20\nGrand Total: SGD 61.91",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-009",
+    "receipt_text": "Merchant: Practice Kitchen 09\nDate: 2026-08-12\nSGD\nAmount Due\n25.20",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-010",
+    "receipt_text": "Merchant: Practice Kitchen 10\nDate: 2026-08-28\nCurrency: SGD\nTotal: 47.95",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-011",
+    "receipt_text": "Store: Practice Kitchen 11\nReceipt date: 2026-08-27\nGrand Total: SGD 75.34",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-012",
+    "receipt_text": "Merchant: Practice Kitchen 12\nDate: 2026-08-10\nSGD\nAmount Due\n31.46",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-013",
+    "receipt_text": "Merchant: Practice Kitchen 13\nDate: 2026-09-14\nCurrency: SGD\nTotal: 35.65",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-014",
+    "receipt_text": "Store: Practice Kitchen 14\nReceipt date: 2026-09-01\nGrand Total: SGD 80.21",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-015",
+    "receipt_text": "Merchant: Practice Kitchen 15\nDate: 2026-08-24\nSGD\nAmount Due\n10.87",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-016",
+    "receipt_text": "Merchant: Practice Kitchen 16\nDate: 2026-09-13\nCurrency: SGD\nSubtotal: 22.00\nTax: 1.99\nTotal: 23.99\nCash: 100.00\nChange: 76.01\nReference: 105661",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-017",
+    "receipt_text": "Merchant: Practice Kitchen 17\nDate: 2026-09-12\nCurrency: SGD\nSubtotal: 67.61\nTax: 6.14\nGrand Total: 73.75\nCash: 100.00\nChange: 26.25\nReference: 674757",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-018",
+    "receipt_text": "Merchant: Practice Kitchen 18\nDate: 2026-08-17\nCurrency: SGD\nSubtotal: 28.84\nTax: 2.62\nAmount Due: 31.46\nCash: 100.00\nChange: 68.54\nReference: 145668",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-019",
+    "receipt_text": "Merchant: Practice Kitchen 19\nDate: 2026-09-03\nCurrency: SGD\nSubtotal: 22.18\nTax: 2.01\nTotal: 24.19\nCash: 100.00\nChange: 75.81\nReference: 139892",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-020",
+    "receipt_text": "Merchant: Practice Kitchen 20\nDate: 2026-08-26\nCurrency: SGD\nSubtotal: 72.18\nTax: 6.56\nGrand Total: 78.74\nCash: 100.00\nChange: 21.26\nReference: 748885",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-021",
+    "receipt_text": "Merchant: Practice Kitchen 21\nDate: 2026-08-18\nCurrency: SGD\nSubtotal: 11.65\nTax: 1.05\nAmount Due: 12.70\nCash: 100.00\nChange: 87.30\nReference: 916357",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-022",
+    "receipt_text": "Merchant: Practice Kitchen 22\nDate: 2026-09-08\nCurrency: SGD\nSubtotal: 13.71\nTax: 1.24\nTotal: 14.95\nCash: 100.00\nChange: 85.05\nReference: 788950",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-023",
+    "receipt_text": "Merchant: Practice Kitchen 23\nDate: 2026-09-02\nCurrency: SGD\nSubtotal: 63.88\nTax: 5.80\nGrand Total: 69.68\nCash: 100.00\nChange: 30.32\nReference: 237536",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-024",
+    "receipt_text": "Merchant: Practice Kitchen 24\nDate: 2026-08-13\nCurrency: SGD\nSubtotal: 33.50\nTax: 3.04\nAmount Due: 36.54\nCash: 100.00\nChange: 63.46\nReference: 379095",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-025",
+    "receipt_text": "Merchant: Practice Kitchen 25\nDate: 2026-09-18\nCurrency: SGD\nSubtotal: 9.03\nTax: 0.82\nTotal: 9.85\nCash: 100.00\nChange: 90.15\nReference: 550488",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-026",
+    "receipt_text": "Merchant: Practice Kitchen 26\nDate: 2026-09-05\nCurrency: SGD\nSubtotal: 74.97\nTax: 6.81\nGrand Total: 81.78\nCash: 100.00\nChange: 18.22\nReference: 290433",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-027",
+    "receipt_text": "Merchant: Practice Kitchen 27\nDate: 2026-08-14\nCurrency: SGD\nSubtotal: 40.66\nTax: 3.69\nAmount Due: 44.35\nCash: 100.00\nChange: 55.65\nReference: 327437",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-028",
+    "receipt_text": "Merchant: Practice Kitchen 28\nDate: 2026-09-13\nCurrency: SGD\nSubtotal: 8.86\nTax: 0.80\nTotal: 9.66\nCash: 100.00\nChange: 90.34\nReference: 490534",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-029",
+    "receipt_text": "Merchant: Practice Kitchen 29\nDate: 2026-08-26\nCurrency: SGD\nSubtotal: 57.60\nTax: 5.23\nGrand Total: 62.83\nCash: 100.00\nChange: 37.17\nReference: 527798",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-030",
+    "receipt_text": "Merchant: Practice Kitchen 30\nDate: 2026-08-20\nCurrency: SGD\nSubtotal: 20.31\nTax: 1.84\nAmount Due: 22.15\nCash: 100.00\nChange: 77.85\nReference: 759251",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-031",
+    "receipt_text": "Merchant: Practice Kitchen 31\nDate: 2026-09-21\nCurrency: SGD\nT0TAL: 33.12",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-032",
+    "receipt_text": "Merchant :    Practice Kitchen 32\nDate :    2026-09-10\nCurrency :    SGD\nGrand Total :    66.25",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-033",
+    "receipt_text": "Merchant: Practice Kitchen 33\nDate: 2026-08-19\nCurrency: SGD\nAmount Due:\n38.82",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-034",
+    "receipt_text": "MERCHANT: Practice Kitchen 34\nReceipt date: 2026-09-14\nCurrency: SGD\nTOTAL: 36.96",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-035",
+    "receipt_text": "Merchant: Practice Kitchen 35   |   Date: 2026-08-29   |   Currency: SGD   |   Grand Total: 83.53",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-036",
+    "receipt_text": "Merchant: Practice Kitchen 36\nDate: 2026-08-10\nCurrency: SGD\nT0TAL: 30.97",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-037",
+    "receipt_text": "Merchant :    Practice Kitchen 37\nDate :    2026-09-17\nCurrency :    SGD\nTotal :    46.00",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-038",
+    "receipt_text": "Merchant: Practice Kitchen 38\nDate: 2026-09-09\nCurrency: SGD\nGrand Total:\n53.74",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-039",
+    "receipt_text": "MERCHANT: Practice Kitchen 39\nReceipt date: 2026-08-10\nCurrency: SGD\nTOTAL: 15.18",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-040",
+    "receipt_text": "Merchant: Practice Kitchen 40   |   Date: 2026-09-09   |   Currency: SGD   |   Total: 22.54",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-041",
+    "receipt_text": "Merchant: Practice Kitchen 41\nDate: 2026-08-29\nCurrency: SGD\nT0TAL: 58.68",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-042",
+    "receipt_text": "Merchant :    Practice Kitchen 42\nDate :    2026-08-18\nCurrency :    SGD\nAmount Due :    18.20",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-043",
+    "receipt_text": "Merchant: Practice Kitchen 43\nDate: 2026-09-08\nCurrency: SGD\nTotal:\n47.07",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-044",
+    "receipt_text": "MERCHANT: Practice Kitchen 44\nReceipt date: 2026-09-23\nCurrency: SGD\nTOTAL: 63.69",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-045",
+    "receipt_text": "Merchant: Practice Kitchen 45   |   Date: 2026-08-11   |   Currency: SGD   |   Amount Due: 27.30",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-046",
+    "receipt_text": "Merchant: Practice Kitchen 46\nDate: 2026-09-17\nCurrency: SGD\nTotal: [unreadable]",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-047",
+    "receipt_text": "Merchant: Practice Kitchen 47\nDate: 2026-09-23\nTotal: $81.21",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-048",
+    "receipt_text": "Merchant: Practice Kitchen 48\nCurrency: SGD\nTotal: 8.43",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-049",
+    "receipt_text": "Merchant: Practice Kitchen 49\nDate: 2026-08-29\nCurrency: SGD\nTotal: 16.20\nTotal: 23.20",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  },
+  {
+    "case_id": "candidate-050",
+    "receipt_text": "Merchant: Practice Kitchen 50\nDate: 2026-08-26\nCurrency: SGD\nGrand Total: 82.09\nCurrency: USD",
+    "claim_metadata": {
+      "claim_category": "meal",
+      "submission_date": "2026-09-24"
+    }
+  }
+]

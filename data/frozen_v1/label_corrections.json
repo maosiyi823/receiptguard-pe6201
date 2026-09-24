@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "independent-002",
+    "field": "annotation_note",
+    "original": "Total amount 15.75 exceeds the maximum allowed 50.00.",
+    "reviewed": "SGD 15.75 is within the amount limit, but 35 days elapsed from 2026-08-20 to 2026-09-24. FLAG for lateness, not amount."
+  },
+  {
+    "case_id": "independent-005",
+    "field": "expected_status",
+    "original": "FLAG",
+    "reviewed": "PASS"
+  },
+  {
+    "case_id": "independent-005",
+    "field": "annotation_note",
+    "original": "Total amount 35.00 exceeds the maximum allowed 50.00.",
+    "reviewed": "SGD 35.00 is below 50.00; submission is 23 days later. Both rules pass."
+  },
+  {
+    "case_id": "independent-007",
+    "field": "group",
+    "original": "simulated_ocr",
+    "reviewed": "clean_varied"
+  },
+  {
+    "case_id": "independent-007",
+    "field": "annotation_note",
+    "original": "All required fields are present and valid. Submission is within 30 days. OCR noise 'S$' is interpreted as SGD.",
+    "reviewed": "S$ is a normal SGD marker, not OCR corruption. Total is 9.40 and submission is 2 days later."
+  },
+  {
+    "case_id": "independent-008",
+    "field": "group",
+    "original": "simulated_ocr",
+    "reviewed": "distractors"
+  },
+  {
+    "case_id": "independent-008",
+    "field": "annotation_note",
+    "original": "Total amount 55.00 exceeds the maximum allowed 50.00.",
+    "reviewed": "Total amount 55.00 exceeds the maximum allowed 50.00. No actual OCR corruption is present; grouped as distractor text."
+  },
+  {
+    "case_id": "independent-009",
+    "field": "group",
+    "original": "simulated_ocr",
+    "reviewed": "distractors"
+  },
+  {
+    "case_id": "independent-009",
+    "field": "annotation_note",
+    "original": "Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-01.",
+    "reviewed": "Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-01. No actual OCR corruption is present; grouped as distractor text."
+  },
+  {
+    "case_id": "independent-010",
+    "field": "annotation_note",
+    "original": "Currency is missing or ambiguous. Total is missing.",
+    "reviewed": "No currency is given. Price: 5.00 is an item price without an explicit final total; under the no-inferred-total annotation convention, total remains null. ABSTAIN."
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "status": "REVIEWED_CANDIDATE_NOT_FROZEN",
+  "count": 50,
+  "source_counts": {
+    "synthetic": 40,
+    "synthetic_other_model": 10
+  },
+  "group_counts": {
+    "clean_varied": 16,
+    "distractors": 17,
+    "simulated_ocr": 12,
+    "insufficient_information": 5
+  },
+  "status_counts": {
+    "PASS": 16,
+    "FLAG": 29,
+    "ABSTAIN": 5
+  },
+  "reviewer": "implementation assistant; not independent human verification",
+  "model_evaluation_performed": false,
+  "independent_generation_record_sha256": "7ee5384636e02a1ddde190508fc2cb2b316321506f73f04a0fddf6658454b13a",
+  "inputs_sha256": "9285a5289ca5aa464bd5628649ee90b65ffaed5e6057d40eec2d72316e92becf",
+  "labels_sha256": "ac7f4a1c0e46b8fe19a2b83ca586213288802a32fdd345519ec4a39dbe74bb5b",
+  "correction_count": 10
+}

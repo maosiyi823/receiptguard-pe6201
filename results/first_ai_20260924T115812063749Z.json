@@ -1,0 +1,113 @@
+{
+  "run_type": "single_synthetic_development_check_not_final_evaluation",
+  "timestamp_utc": "2026-09-24T11:58:12.062192+00:00",
+  "receipt_text": "Merchant: Demo Cafe\nDate: 2026-09-20\nCurrency: SGD\nTotal: 12.50",
+  "claim_metadata": {
+    "claim_category": "meal",
+    "submission_date": "2026-09-24"
+  },
+  "ai_result": {
+    "fields": {
+      "merchant": "Demo Cafe",
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "evidence": {
+      "merchant": "Demo Cafe",
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "issues": [],
+    "checks": [
+      {
+        "rule": "meal_limit",
+        "pass": true
+      },
+      {
+        "rule": "submission_window",
+        "pass": true,
+        "age_days": 4
+      }
+    ],
+    "status": "PASS",
+    "review_required": false,
+    "review_reasons": [],
+    "policy_version": "demo-v0.1"
+  },
+  "regex_result": {
+    "fields": {
+      "merchant": "Demo Cafe",
+      "receipt_date": "2026-09-20",
+      "currency": "SGD",
+      "total": "12.50"
+    },
+    "evidence": {
+      "merchant": [
+        "Merchant: Demo Cafe"
+      ],
+      "receipt_date": [
+        "Date: 2026-09-20"
+      ],
+      "total": [
+        "Total: 12.50"
+      ],
+      "currency": [
+        "Currency: SGD"
+      ]
+    },
+    "issues": [],
+    "checks": [
+      {
+        "rule": "meal_limit",
+        "pass": true
+      },
+      {
+        "rule": "submission_window",
+        "pass": true,
+        "age_days": 4
+      }
+    ],
+    "status": "PASS",
+    "review_required": false,
+    "review_reasons": [],
+    "policy_version": "demo-v0.1"
+  },
+  "connection_log": {
+    "requested_model": "openai/gpt-4o-mini",
+    "temperature": 0,
+    "max_tokens": 600,
+    "prompt_sha256": "ff7420166dc886c53586c5e7ac5e733353926f617479df9339acf6fea1e4cd7e",
+    "latency_seconds": 2.504,
+    "attempts": 1,
+    "returned_model": "openai/gpt-4o-mini",
+    "request_id": "gen-1790251090-v3LJOrHqGfEXqCRNXbvK",
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 63,
+      "total_tokens": 393,
+      "cost": 8.73e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.73e-05,
+        "upstream_inference_prompt_cost": 4.95e-05,
+        "upstream_inference_completions_cost": 3.78e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "raw_model_output": "{\"fields\":{\"merchant\":\"Demo Cafe\",\"receipt_date\":\"2026-09-20\",\"currency\":\"SGD\",\"total\":\"12.50\"},\"evidence\":{\"merchant\":\"Demo Cafe\",\"receipt_date\":\"2026-09-20\",\"currency\":\"SGD\",\"total\":\"12.50\"},\"issues\":[] }",
+    "output_valid": true
+  },
+  "sample_check_passed": true
+}

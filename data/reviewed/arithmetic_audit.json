@@ -1,0 +1,552 @@
+[
+  {
+    "case_id": "candidate-001",
+    "age_days": 21,
+    "total": "20.70",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-002",
+    "age_days": 10,
+    "total": "53.03",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-003",
+    "age_days": 45,
+    "total": "35.98",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-004",
+    "age_days": 28,
+    "total": "35.96",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-005",
+    "age_days": 14,
+    "total": "55.54",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-006",
+    "age_days": 32,
+    "total": "37.15",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-007",
+    "age_days": 13,
+    "total": "39.64",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-008",
+    "age_days": 4,
+    "total": "61.91",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-009",
+    "age_days": 43,
+    "total": "25.20",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-010",
+    "age_days": 27,
+    "total": "47.95",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-011",
+    "age_days": 28,
+    "total": "75.34",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-012",
+    "age_days": 45,
+    "total": "31.46",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-016",
+    "age_days": 11,
+    "total": "23.99",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-017",
+    "age_days": 12,
+    "total": "73.75",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-018",
+    "age_days": 38,
+    "total": "31.46",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-019",
+    "age_days": 21,
+    "total": "24.19",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-020",
+    "age_days": 29,
+    "total": "78.74",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-021",
+    "age_days": 37,
+    "total": "12.70",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-022",
+    "age_days": 16,
+    "total": "14.95",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-023",
+    "age_days": 22,
+    "total": "69.68",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-024",
+    "age_days": 42,
+    "total": "36.54",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-025",
+    "age_days": 6,
+    "total": "9.85",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-026",
+    "age_days": 19,
+    "total": "81.78",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-027",
+    "age_days": 41,
+    "total": "44.35",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-031",
+    "age_days": 3,
+    "total": "33.12",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-032",
+    "age_days": 14,
+    "total": "66.25",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-033",
+    "age_days": 36,
+    "total": "38.82",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-034",
+    "age_days": 10,
+    "total": "36.96",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-035",
+    "age_days": 26,
+    "total": "83.53",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-036",
+    "age_days": 45,
+    "total": "30.97",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-037",
+    "age_days": 7,
+    "total": "46.00",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-038",
+    "age_days": 15,
+    "total": "53.74",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-039",
+    "age_days": 45,
+    "total": "15.18",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-040",
+    "age_days": 15,
+    "total": "22.54",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-041",
+    "age_days": 26,
+    "total": "58.68",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-042",
+    "age_days": 37,
+    "total": "18.20",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "candidate-046",
+    "age_days": 7,
+    "total": null,
+    "currency": "SGD",
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": null,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-047",
+    "age_days": 1,
+    "total": "81.21",
+    "currency": null,
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "candidate-048",
+    "age_days": null,
+    "total": "8.43",
+    "currency": "SGD",
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": null
+    }
+  },
+  {
+    "case_id": "candidate-049",
+    "age_days": 26,
+    "total": null,
+    "currency": "SGD",
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": null,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-001",
+    "age_days": 9,
+    "total": "13.50",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-002",
+    "age_days": 35,
+    "total": "15.75",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "independent-003",
+    "age_days": 45,
+    "total": "22.00",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "independent-004",
+    "age_days": 4,
+    "total": "10.50",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-005",
+    "age_days": 23,
+    "total": "35.00",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-006",
+    "age_days": 71,
+    "total": "25.00",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "independent-007",
+    "age_days": 2,
+    "total": "9.40",
+    "currency": "SGD",
+    "expected_status": "PASS",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-008",
+    "age_days": 14,
+    "total": "55.00",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": false,
+      "submission_window": true
+    }
+  },
+  {
+    "case_id": "independent-009",
+    "age_days": 54,
+    "total": "28.50",
+    "currency": "SGD",
+    "expected_status": "FLAG",
+    "expected_checks": {
+      "meal_limit": true,
+      "submission_window": false
+    }
+  },
+  {
+    "case_id": "independent-010",
+    "age_days": 1,
+    "total": null,
+    "currency": null,
+    "expected_status": "ABSTAIN",
+    "expected_checks": {
+      "meal_limit": null,
+      "submission_window": true
+    }
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "status": "FROZEN_BEFORE_PREDICTIONS",
+  "frozen_at_utc": "2026-09-24T12:20:16.374552+00:00",
+  "count": 50,
+  "hashes": {
+    "receiptguard.py": "7d6a7feafbe8e12d49738dafcca52030801158345bba8d8741a258d3516e0a37",
+    "ai_client.py": "e8b3d293c2f6997330306bef45a9875338b8ca4340f4ee76cd87cf267f0ce689",
+    "common_validation.py": "0a86c085a69c3e019b3003b17a8f67b95f22e6de132c448b5e28c386b714ba66",
+    "run_development.py": "84f45624ff83ab54de0588431091c8b0d610eaec81ca40c5e38e69226de6e726",
+    "run_final.py": "2df97371af500724004c3f1a0182f9bd5e167c1cf3a93ebe4395b02659b5a2ec",
+    "prompts/extract_v2.txt": "995b48656d79ccf42619f7be866d94a1adf311a2e4e525536c8a00d0997ef0d4",
+    "data/dev.json": "2693b48df0728db2d531fb134338ca7d94d67e8a0fa02955bb0348e3fca79526",
+    "data/frozen_v1/inputs.json": "9285a5289ca5aa464bd5628649ee90b65ffaed5e6057d40eec2d72316e92becf",
+    "data/frozen_v1/labels.json": "ac7f4a1c0e46b8fe19a2b83ca586213288802a32fdd345519ec4a39dbe74bb5b",
+    "data/frozen_v1/label_corrections.json": "cfe851a2b8bd37f62e7d7b417d0722fead11dce0cbdcc150b27b4738986b66a1",
+    "data/frozen_v1/arithmetic_audit.json": "5eacb59a94ae9463295d23ec76988cfa86549b7bfe6b5eb080035c681c3ea0ce"
+  },
+  "review_status": "Assistant-reviewed; no independent human verification claimed.",
+  "majority_reference": "PASS selected from development set",
+  "primary_metric": "Correct non-abstained decision AND required fields / all cases",
+  "mandatory_abstentions": 5,
+  "automated_completion_ceiling": 0.9,
+  "abstention_target": "No <10% target; report mandatory and unnecessary abstention separately.",
+  "model": "openai/gpt-4o-mini",
+  "temperature": 0,
+  "max_tokens": 600,
+  "retry_policy": "None; stop on first connection failure; partial metrics not final",
+  "limitations": [
+    "Synthetic text only; no real OCR validation",
+    "40 local generated and 10 different-model cases; not a wholly independent benchmark",
+    "Baseline is simple and has limited label/layout coverage; do not generalize to all rule systems",
+    "No arithmetic reconciliation or tax-ID verification implemented"
+  ],
+  "prediction_runs_at_freeze": 0
+}

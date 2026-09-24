@@ -1,0 +1,54 @@
+{
+  "status": "UNREVIEWED_NOT_FROZEN",
+  "requested_model": "google/gemini-2.5-flash-lite",
+  "returned_model": "google/gemini-2.5-flash-lite",
+  "prompt": "Author exactly 10 original English synthetic receipt-text test cases for a receipt extraction system. You are a different model from the tested GPT-4o-mini. You receive no extractor code, extraction prompt, existing examples or prediction results. Your cases are independently contributed within this specification, not an independent real-world benchmark.\n\nUse fictional merchants and no personal data. Inputs are receipt text plus claim_category and submission_date. Fixed demonstration policy: meal category only, SGD only, positive total <=50.00, and submission 0 through 30 days after the receipt date. Unsupported category/currency, missing or ambiguous required fields require ABSTAIN. Fully determined violations require FLAG. Otherwise PASS. Preserve independently knowable fields even when another is ambiguous. A bare dollar sign does not identify a currency. Equal duplicate totals are not a conflict. All dates must be unambiguous and all amounts have two decimals.\n\nCreate in this exact order: cases 1-3 clean_varied, cases 4-6 distractors, cases 7-9 simulated_ocr, case 10 insufficient_information. Within each group of three, create one PASS, one FLAG due to amount, and one FLAG due to late submission. Case 10 must be genuinely unanswerable (ABSTAIN). Use varied natural layouts, labelled amounts, realistic text noise such as character confusion, broken lines or spacing. Do not erase needed numeric digits in answerable cases. Keep each receipt below 450 characters. Avoid unsupported tax/compliance claims; no tax-ID or arithmetic-validation policy is implemented. Submission date is 2026-09-24, claim_category is meal. Invent original values and layouts; do not put answers or policy labels in the receipt text.\n\nReturn JSON with cases. Each case contains receipt_text, claim_category, submission_date, group, expected_status, receipt_date, currency, total, annotation_note. Field labels describe what can be known from provided text, not hidden original facts. Unknown fields are null. Annotation notes explain the answer; they will never be sent to the extractor. These labels are proposals requiring review, not authoritative ground truth.\n",
+  "prompt_sha256": "4d3d5401b587c8188cc85a9f5784d1fbc44e9a00890438aeab586d6a9fc3c118",
+  "latency_seconds": 7.58,
+  "response": {
+    "id": "gen-1790252157-i5OwTkGCZXA21vRllq1y",
+    "object": "chat.completion",
+    "created": 1790252157,
+    "model": "google/gemini-2.5-flash-lite",
+    "provider": "Google",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "STOP",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"cases\": [\n    {\n      \"receipt_text\": \"The Cozy Cafe\\n123 Main St\\n\\nDate: 2026-09-15\\n\\nEspresso x2\\nCroissant\\n\\nSubtotal: 12.50\\nTax: 1.00\\nTOTAL: SGD 13.50\\n\\nThank you!\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"clean_varied\",\n      \"expected_status\": \"PASS\",\n      \"annotation_note\": \"All required fields are present and valid. Submission is within 30 days.\",\n      \"receipt_date\": \"2026-09-15\",\n      \"currency\": \"SGD\",\n      \"total\": \"13.50\"\n    },\n    {\n      \"receipt_text\": \"Burger Barn\\n45 Elm Ave\\n\\nReceipt Date: 2026-08-20\\n\\nCheeseburger Combo\\nFries\\n\\nAmount Due: 15.75\\nCurrency: SGD\\n\\nTotal: 15.75\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"clean_varied\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Total amount 15.75 exceeds the maximum allowed 50.00.\",\n      \"receipt_date\": \"2026-08-20\",\n      \"currency\": \"SGD\",\n      \"total\": \"15.75\"\n    },\n    {\n      \"receipt_text\": \"Noodle House\\n789 Oak Ln\\n\\nDate: 2026-08-10\\n\\nPad Thai\\nSpring Rolls\\n\\nTotal: 22.00 SGD\\n\\nPayment: Cash\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"clean_varied\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-10.\",\n      \"receipt_date\": \"2026-08-10\",\n      \"currency\": \"SGD\",\n      \"total\": \"22.00\"\n    },\n    {\n      \"receipt_text\": \"The Daily Grind\\nCoffee Shop\\n\\nDate: 2026-09-20\\n\\nLatte\\nSandwich\\n\\nAmount: 10.50\\nCurrency: SGD\\n\\n*Special Offer*\\n\\nTotal: 10.50\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"distractors\",\n      \"expected_status\": \"PASS\",\n      \"annotation_note\": \"All required fields are present and valid. Submission is within 30 days. 'Special Offer' is a distractor.\",\n      \"receipt_date\": \"2026-09-20\",\n      \"currency\": \"SGD\",\n      \"total\": \"10.50\"\n    },\n    {\n      \"receipt_text\": \"Pizza Palace\\n10 Pine St\\n\\nReceipt Date: 2026-09-01\\n\\nPepperoni Pizza\\n\\nTotal Amount: 35.00\\n\\n*Discount Applied*\\n\\nFinal Total: 35.00 SGD\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"distractors\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Total amount 35.00 exceeds the maximum allowed 50.00.\",\n      \"receipt_date\": \"2026-09-01\",\n      \"currency\": \"SGD\",\n      \"total\": \"35.00\"\n    },\n    {\n      \"receipt_text\": \"Sushi Spot\\n20 Maple Ave\\n\\nDate: 2026-07-15\\n\\nCalifornia Roll\\nMiso Soup\\n\\nTotal: 25.00\\n\\n*Loyalty Points Earned*\\n\\nSGD 25.00\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"distractors\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Submission date 2026-09-24 is more than 30 days after the receipt date 2026-07-15.\",\n      \"receipt_date\": \"2026-07-15\",\n      \"currency\": \"SGD\",\n      \"total\": \"25.00\"\n    },\n    {\n      \"receipt_text\": \"Cafe Delight\\n30 Birch Rd\\n\\nDate: 2026-09-22\\n\\nCappuccino\\nPastry\\n\\nSubtotal: 8.75\\nTax: 0.65\\nTOTAL: S$ 9.40\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"simulated_ocr\",\n      \"expected_status\": \"PASS\",\n      \"annotation_note\": \"All required fields are present and valid. Submission is within 30 days. OCR noise 'S$' is interpreted as SGD.\",\n      \"receipt_date\": \"2026-09-22\",\n      \"currency\": \"SGD\",\n      \"total\": \"9.40\"\n    },\n    {\n      \"receipt_text\": \"The Grill House\\n40 Cedar St\\n\\nReceipt Date: 2026-09-10\\n\\nSteak Frites\\n\\nAmount Due: 55.00\\n\\n*Special Offer*\\n\\nTotal: 55.00 SGD\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"simulated_ocr\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Total amount 55.00 exceeds the maximum allowed 50.00.\",\n      \"receipt_date\": \"2026-09-10\",\n      \"currency\": \"SGD\",\n      \"total\": \"55.00\"\n    },\n    {\n      \"receipt_text\": \"Pasta Place\\n50 Maple Ave\\n\\nDate: 2026-08-01\\n\\nSpaghetti Carbonara\\n\\nTotal: 28.50\\n\\n*Customer Feedback*\\n\\nSGD 28.50\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"simulated_ocr\",\n      \"expected_status\": \"FLAG\",\n      \"annotation_note\": \"Submission date 2026-09-24 is more than 30 days after the receipt date 2026-08-01.\",\n      \"receipt_date\": \"2026-08-01\",\n      \"currency\": \"SGD\",\n      \"total\": \"28.50\"\n    },\n    {\n      \"receipt_text\": \"Food Court Stall\\n\\nDate: 2026-09-23\\n\\nItem: Chicken Rice\\n\\nPrice: 5.00\\n\\nThank you!\",\n      \"claim_category\": \"meal\",\n      \"submission_date\": \"2026-09-24\",\n      \"group\": \"insufficient_information\",\n      \"expected_status\": \"ABSTAIN\",\n      \"annotation_note\": \"Currency is missing or ambiguous. Total is missing.\",\n      \"receipt_date\": \"2026-09-23\",\n      \"currency\": null,\n      \"total\": null\n    }\n  ]\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 2013,
+      "total_tokens": 2468,
+      "cost": 0.0008507,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008507,
+        "upstream_inference_prompt_cost": 4.55e-05,
+        "upstream_inference_completions_cost": 0.0008052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  }
+}
